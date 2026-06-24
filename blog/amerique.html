@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amérique – Suggestions de voyage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <!-- Bandeau en bois -->
+  <header class="wooden-header">
+    <img src="images/banniere-bois.png" alt="Bannière bois" class="wood-banner" />
+    <nav class="nav-links">
+      <div class="dropdown">
+        <a href="index.html" class="dropbtn">Accueil</a>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Carnets</a>
+        <div class="dropdown-content">
+          <a href="europe.html">Europe</a>
+          <a href="afrique.html">Afrique</a>
+          <a href="asie.html">Asie</a>
+          <a href="amerique.html">Amérique</a>
+          <a href="tous-les-pays.html">Tous les pays</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Inspiration</a>
+        <div class="dropdown-content">
+          <a href="galerie.html">Galerie</a>
+          <a href="articles.html">Articles</a>
+          <a href="apropos.html">À propos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Pratique</a>
+        <div class="dropdown-content">
+          <a href="materiel.html">Matériel photo</a>
+          <a href="visa.html">Visa & Infos</a>
+          <a href="carte.html">Carte interactive</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenu carnet -->
+  <main class="notebook">
+    <h1>🌎 Amérique – En attente d’exploration</h1>
+    <p>
+      Je n’ai pas encore eu la chance de voyager sur ce continent… mais ce rêve grandit chaque jour.  
+      Des montagnes aux plages, des grandes villes aux villages perdus, j’aimerais découvrir l’Amérique avec vos yeux 🧭  
+      Aide-moi à construire mon itinéraire ! ✨
+    </p>
+
+    <h2>💌 Tes recommandations pour moi</h2>
+    <p>Tu as voyagé en Amérique ou tu rêves d’y aller ? Dis-moi quels pays, villes ou lieux je devrais visiter :</p>
+
+    <form action="https://formspree.io/f/mkgjqjqq" method="POST">
+      <label for="email">Ton email (facultatif) :</label><br>
+      <input type="email" id="email" name="email" placeholder="exemple@email.com"><br><br>
+
+      <label for="message">Tes recommandations :</label><br>
+      <textarea id="message" name="message" rows="6" placeholder="Dis-moi tout !" required></textarea><br><br>
+
+      <button type="submit">Envoyer ✈️</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    Merci pour ta précieuse aide 💛  
+    Peut-être que ta suggestion sera le point de départ de ma future aventure !
+  </footer>
+
+</body>
+</html>
