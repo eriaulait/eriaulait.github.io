@@ -6,9 +6,15 @@
   <title>eriaulait</title>
   <meta name="description" content="eriaulait : voyages, photos, bons plans et inspirations pour découvrir le monde." />
 
+  <!-- Aperçu quand le lien est partagé (WhatsApp, Insta, Facebook…) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eriaulait.com/" />
+  <meta property="og:title" content="eriaulait" />
+  <meta property="og:description" content="Voyages, photos et bons plans pour découvrir le monde" />
+  <meta property="og:image" content="https://eriaulait.com/images/lijiang.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <!-- Google Tag Manager -->
-  <!-- Tu peux garder le même GTM si tu veux suivre erikaramel.com et eriaulait.com ensemble.
-       Si tu veux séparer les statistiques, crée plutôt un nouveau conteneur GTM. -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -16,65 +22,20 @@
   })(window,document,'script','dataLayer','GTM-MC8CRXMS');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Footer font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 
   <style>
-    /* Noyh A (main font) */
-    @font-face {
-      font-family: 'NoyhA';
-      src: url('fonts/NoyhA-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    :root{
-  --blue:#243f53;
-  --blue-2:#243f53;
-  --blue-3:#3b5f78;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'NoyhA', sans-serif;
-      background: url('images/nuages-pc.png') center/cover no-repeat fixed;
-      text-align: center;
-      padding: 2rem;
-      color: var(--blue-2);
-    }
-
-    /* Mobile background settings */
-    @media (max-width: 768px) {
-      body {
-        background: url('images/nuages-mobile.png') center repeat;
-        background-size: cover;
-        background-attachment: scroll;
-      }
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: var(--blue);
-      margin-bottom: 0.3rem;
-      letter-spacing: 0.5px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      color: var(--blue-2);
-    }
+    h1 { text-transform: none; }
 
     .hero-img {
       max-width: 100%;
       width: 320px;
+      height: auto;
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       margin-bottom: 1.5rem;
@@ -94,49 +55,17 @@
       transition: transform 0.2s ease;
     }
 
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
+    .social-icons a:hover { transform: scale(1.2); }
 
-    .links a {
-      display: block;
-      background-color: var(--blue);
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      margin: 0.6rem auto 1.2rem;
-      border-radius: 30px;
-      max-width: 320px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-
-    .links a:hover {
-      background-color: var(--blue-3);
-    }
+    .links { margin-bottom: 1.5rem; }
+    .links a { max-width: 320px; }
 
     .intro {
-      font-family: 'NoyhA', sans-serif;
       font-size: 1.1rem;
       line-height: 1.6;
       max-width: 720px;
       margin: 0 auto 0.25rem;
       padding: 0 1rem;
-      color: var(--blue-2);
-    }
-
-    footer {
-      margin-top: 1.25rem;
-      padding-bottom: 1rem;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .small-footer {
-      font-size: 0.8rem;
-      opacity: 0.65;
-      margin: 0.15rem 0;
-      color: var(--blue-2);
     }
   </style>
 </head>
@@ -154,18 +83,18 @@
     Voyages, photos et bons plans pour découvrir le monde
   </p>
 
-  <img src="images/lijiang.jpg" alt="Erika à Lijiang" class="hero-img" />
+  <img src="/images/lijiang.jpg" alt="Erika à Lijiang" class="hero-img" width="320" height="314" />
 
   <div class="social-icons">
-    <a href="https://www.tiktok.com/@eriaulait" target="_blank" aria-label="TikTok">
+    <a href="https://www.tiktok.com/@eriaulait" target="_blank" rel="noopener" aria-label="TikTok">
       <i class="fab fa-tiktok"></i>
     </a>
 
-    <a href="https://www.instagram.com/eriaulait" target="_blank" aria-label="Instagram">
+    <a href="https://www.instagram.com/eriaulait" target="_blank" rel="noopener" aria-label="Instagram">
       <i class="fab fa-instagram"></i>
     </a>
 
-    <a href="https://www.youtube.com/@eriaulait" target="_blank" aria-label="YouTube">
+    <a href="https://www.youtube.com/@eriaulait" target="_blank" rel="noopener" aria-label="YouTube">
       <i class="fab fa-youtube"></i>
     </a>
 
@@ -174,14 +103,9 @@
     </a>
   </div>
 
-  <!-- Tu pourras réactiver cette partie plus tard si tu veux ajouter des liens -->
-  <!--
   <div class="links">
-    <a id="travel-guides-link" href="/guides">MES GUIDES VOYAGE</a>
-    <a id="travel-tools-link" href="/outils">MES OUTILS VOYAGE</a>
-    <a id="contact-link" href="mailto:contact@eriaulait.com">ME CONTACTER</a>
+    <a href="/essentials">MES ESSENTIELS VOYAGE</a>
   </div>
-  -->
 
   <p class="intro">
     Coucou, moi c’est Erika. Je te partage mes voyages, mes photos, mes conseils et mes bons plans pour t’aider à organiser tes propres aventures sans te perdre dans 47 onglets ouverts.
